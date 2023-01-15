@@ -1,5 +1,5 @@
 
-FROM amazoncorretto: 11-alpine-jdk  //VERSION JAVA
-MAINTAINER NICO //OWNER
-COPY  target/PortfolioNicoFrances-0.0.1-SNAPSHOT.jar  portfolioApp.jar           //COPIA EL EMPAQUEADO Y LO SUBE
-ENTRYPOINT ["java","-jar","/portfolioApp.jar"]                //ENTRADA
+FROM amazoncorretto: 11-alpine-jdk
+MAINTAINER NICO
+COPY  target/PortfolioNicoFrances-0.0.1-SNAPSHOT.jar  portfolioApp.jar
+ENTRYPOINT ["java","-jar","/portfolioApp.jar"]
